@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <!-- page content -->
+  </body>
+  <script src="./lib_3dscenes_extensions.js"></script>
+  <script>
+      const api = {};
+      Module.onRuntimeInitialized = async () => {
+          api.executeLua = Module.cwrap('execute_lua', null, ['string']);
+          console.log('Library loaded.');
+      };
+  </script>
+</html>

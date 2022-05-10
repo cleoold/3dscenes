@@ -1,0 +1,3 @@
+[submodule "extensions/vendors/lua/src"]
+	path = extensions/vendors/lua/src
+	url = https://github.com/lua/lua/
