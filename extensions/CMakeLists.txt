@@ -7,10 +7,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic")
 
 add_subdirectory(vendors/lua)
+add_subdirectory(vendors/glm)
 
 set(CMAKE_EXECUTABLE_SUFFIX ".js")
 add_executable(lib_3dscenes_extensions 3dscenes_extensions.cxx)
 target_link_libraries(lib_3dscenes_extensions PUBLIC lua::lib)
+target_link_libraries(lib_3dscenes_extensions PUBLIC glm-header)
 
 #if (EMSCRIPTEN)
 include_directories("/mnt/c/emsdk/upstream/emscripten/cache/sysroot/include/")  # vscode intellisense only

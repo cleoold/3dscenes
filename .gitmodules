@@ -1,3 +1,6 @@
 [submodule "extensions/vendors/lua/src"]
 	path = extensions/vendors/lua/src
 	url = https://github.com/lua/lua/
+[submodule "extensions/vendors/glm/src"]
+	path = extensions/vendors/glm/src
+	url = https://github.com/g-truc/glm/

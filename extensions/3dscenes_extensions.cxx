@@ -1,12 +1,12 @@
 #include <iostream>
 
-#include "emscripten.h"
+#include <emscripten.h>
 
 extern "C"
 {
-    #include "lua.h"
-    #include "lauxlib.h"
-    #include "lualib.h"
+    #include <lua.h>
+    #include <lauxlib.h>
+    #include <lualib.h>
 }
 
 extern "C"
