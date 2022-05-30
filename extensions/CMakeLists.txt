@@ -15,8 +15,7 @@ target_link_libraries(lib_3dscenes_extensions PUBLIC lua::lib)
 target_link_libraries(lib_3dscenes_extensions PUBLIC glm-header)
 
 #if (EMSCRIPTEN)
-include_directories("/mnt/c/emsdk/upstream/emscripten/cache/sysroot/include/")  # vscode intellisense only
 set_target_properties(lib_3dscenes_extensions PROPERTIES LINK_FLAGS "-s WASM=1 -s EXPORTED_RUNTIME_METHODS='[\"cwrap\"]'")
 #endif()
 
-set_target_properties(lib_3dscenes_extensions PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../web)
+set_target_properties(lib_3dscenes_extensions PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../../web)

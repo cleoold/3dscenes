@@ -1,0 +1,9 @@
+[
+    {
+        "name": "wasm",
+        "compilers": {
+            "C": "/home/vscode/emsdk/upstream/emscripten/emcc",
+            "CXX": "/home/vscode/emsdk/upstream/emscripten/em++"
+        }
+    }
+]
